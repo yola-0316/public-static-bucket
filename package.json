@@ -1,6 +1,6 @@
 {
-  "name": "configure-sync",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "public-static-bucket",
+  "version": "0.1.0",
+  "private": true,
   "license": "MIT"
 }
