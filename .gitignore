@@ -8,6 +8,7 @@ Desktop.ini
 .idea
 
 # Program Language
+node_modules
+*-error.log
 
 # Project
-*.synctex.gz

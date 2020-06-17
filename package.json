@@ -2,5 +2,33 @@
   "name": "public-static-bucket",
   "version": "0.1.0",
   "private": true,
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "echo \"This template does not include a test runner by default.\" && exit 1"
+  },
+  "dependencies": {
+    "svelte": "^3.23.2",
+    "tailwindcss": "^1.4.6"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@snowpack/app-scripts-svelte": "^1.2.0",
+    "autoprefixer": "^9.8.0",
+    "husky": "^4.2.5",
+    "postcss-cli": "^7.1.1",
+    "snowpack": "^2.5.2"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
 }
